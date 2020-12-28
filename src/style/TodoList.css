@@ -1,0 +1,26 @@
+.todo__button {
+  /* background-color: white; */
+  margin-top: 10px;
+  border: 2px solid rgb(253, 249, 249);
+  margin-bottom: 10px;
+  padding: 4px;
+}
+.todo__button:hover {
+  box-shadow: 0 0 2px 2px red;
+}
+
+.todo__button:disabled,
+.todo__button[disabled] {
+  cursor: not-allowed;
+  border: 2px solid black;
+}
+.todo__textArea {
+  font-size: 17px;
+}
+#main {
+  margin-left: 40%;
+  color: white;
+}
+#logouter {
+  margin-left: 24%;
+}

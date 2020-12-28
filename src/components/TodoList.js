@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import ListItem from './ListItem';
-import './App.css';
+import './../style/App.css';
+import './../style/TodoList.css';
 
 export default function TodoList(props) {
   const [items, setItems] = useState([]);
@@ -77,18 +78,27 @@ export default function TodoList(props) {
     <div id="main">
       <div className="user">
         <div>
-          Username: <b>{props.username}</b>
+          Username : <b>{props.username}</b>
         </div>
-        <button onClick={props.logoutHandler}>Log Out</button>
+        <button
+          id="logouter"
+          className="todo__button"
+          onClick={props.logoutHandler}
+        >
+          Log Out
+        </button>
       </div>
       <div className="new">
         <textarea
           id="task"
+          className="todo__textArea"
           onChange={newItemChanged}
           placeholder="New Item"
           value={newItem}
         ></textarea>
+        <br />
         <button
+          className="todo__button"
           id="btn"
           onClick={addItem}
           disabled={newItem.trim().length === 0}

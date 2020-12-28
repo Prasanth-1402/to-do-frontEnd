@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import TodoList from './TodoList';
 import LoginForm from './LoginForm';
-import './../styles/App.css';
+import './../style/App.css';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);

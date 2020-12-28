@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './../styles/App.css';
+import './../style/App.css';
 
 function ListItem(props) {
   const [editedItem, setEditedItem] = useState(props.item.task);
