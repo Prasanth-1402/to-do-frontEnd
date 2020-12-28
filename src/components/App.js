@@ -9,7 +9,9 @@ function App() {
   const [userName, setUserName] = useState(undefined);
 
   const getUserName = () => {
-    return fetch('http://localhost:9999/userinfo', {credentials: 'include'})
+    return fetch('https://vast-mountain-86932.herokuapp.com', {
+      credentials: 'include',
+    })
       .then((r) => {
         if (r.ok) {
           return r.json();
